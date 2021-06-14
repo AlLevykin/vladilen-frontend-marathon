@@ -62,11 +62,13 @@ body {
 
 button {
   background-color: #fff;
-  border: none;
+  border-color: black;
+  border-width: 2px;
   color: #aaa;
   cursor: pointer;
   font-size: 16px;
   padding: 15px;
+  border-radius: 5px;
 }
 
 button:hover {
@@ -85,13 +87,18 @@ button:focus {
 }
 
 .container .controls .down-button {
-  transform: translateX(-100%);
+  transform: translate(-50%, 55%);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
 .container .controls .up-button {
-  transform: translateY(-100%);
+  transform: translate(-50%, -155%);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
+
+.container .controls .random-button {
+  transform: translate(-50%, -50%);
+}
+
