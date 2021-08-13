@@ -45,8 +45,8 @@ function setTime(value) {
 function createRandomTarget() {
     const size = getRandomNumber(10, 60)
     const {width, height} = board.getBoundingClientRect()
-    const x = getRandomNumber(0, width - size)
-    const y = getRandomNumber(0, height - size)
+    const x = getRandomNumber(0, width - size - 10)
+    const y = getRandomNumber(0, height - size - 10)
     const t = document.createElement('div')
 
     t.classList.add('circle')
@@ -80,7 +80,6 @@ function finishGame() {
 function restartGame() {
     time = 0
     score = 0
-    screens[0].classList.remove('up')
     screens[1].classList.remove('up')  
     timeEl.parentNode.classList.remove('hide') 
     board.innerHTML = '' 
